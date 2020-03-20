@@ -3,19 +3,6 @@ import os
 import os.path
 import argparse
 
-def sort_list(j):
-    if(j>=0 and j<=9):
-        n=3
-    elif (j>=10 and j<=99):
-        n=2
-    elif (j>=100 and j<=999):
-        n=1
-    elif (j>=1000 and j<=9999):
-        n=0
-    else:
-        print('too many image data, more than 1000.')
-    return n
-
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('--dir','-d', type=str, default='dir/', help='where to access file')
